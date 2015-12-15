@@ -37,6 +37,10 @@ describe('basic test', function () {
 		saucelabs.updateJob(client.requestHandler.sessionID, {
       		passed: results === 0
     	}, function () {});
+		console.log("SauceOnDemandSessionID=" + 
+					client.requestHandler.sessionID +
+					" job-name=" + 
+					jasmine.getEnv().currentSpec.description);
 		client.end(done);
 	});
 
