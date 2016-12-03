@@ -1,4 +1,5 @@
-## JS-Grunt-Jasmine-WebdriverIO
+# JS-Jasmine-WebdriverIO-Selenium
+[![Travis Status](https://travis-ci.org/saucelabs-sample-test-frameworks/JS-Jasmine-WebdriverIO-Selenium.svg?branch=master)](https://travis-ci.org/saucelabs-sample-test-frameworks/JS-Jasmine-WebdriverIO-Selenium)
 
 This code is provided on an "AS-IS” basis without warranty of any kind, either express or implied, including without limitation any implied warranties of condition, uninterrupted use, merchantability, fitness for a particular purpose, or non-infringement. Your tests and testing environments may require you to modify this framework. Issues regarding this framework should be submitted through GitHub. For questions regarding Sauce Labs integration, please see the Sauce Labs documentation at https://wiki.saucelabs.com/. This framework is not maintained by Sauce Labs Support.
 
@@ -9,10 +10,6 @@ This code is provided on an "AS-IS” basis without warranty of any kind, either
     * Or Install Node.js with [Homebrew](http://brew.sh/)
     ```
     $ brew install node
-    ```
-    * Install Grunt Globally
-    ```
-    $ npm install -g grunt-cli
     ```
 2. Sauce Credentials
     * In the terminal export your Sauce Labs Credentials as environmental variables:
@@ -30,7 +27,7 @@ This code is provided on an "AS-IS” basis without warranty of any kind, either
 
 * Tests in Parallel:
 	```
-	$ npm test
+	$ ./node_modules/.bin/wdio wdio.conf.js
 	```
 
 [Sauce Labs Dashboard](https://saucelabs.com/beta/dashboard/)
@@ -49,9 +46,7 @@ This code is provided on an "AS-IS” basis without warranty of any kind, either
 
 ##### [Node Documentation](https://nodejs.org/en/docs/)
 
-##### [Jasmine Documentation](http://jasmine.github.io/2.4/introduction.html)
-
-##### [Grunt Documentation](http://gruntjs.com/getting-started)
+##### [Mocha Documentation](https://mochajs.org/)
 
 ##### [Stack Overflow](http://stackoverflow.com/)
 * A great resource to search for issues not explicitly covered by documentation
