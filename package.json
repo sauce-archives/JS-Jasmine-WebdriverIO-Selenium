@@ -1,7 +1,7 @@
 {
-  "name": "JS-Grunt-Jasmine-WebdriverIO",
+  "name": "JS-Jasmine-WebdriverIO",
   "version": "0.0.1",
-  "description": "Parallel tests protractor  =============",
+  "description": "Example framework using WebdriverIO and Jasmine",
   "main": "",
   "license": "MIT",
   "repository": {
@@ -9,15 +9,13 @@
     "url": "git@github.com:saucelabs-sample-test-frameworks/JS-Grunt-Jasmine-WebdriverIO.git"
   },
   "scripts": {
-    "test": "./node_modules/grunt-cli/bin/grunt"
+    "test": "./node_modules/.bin/wdio wdio.conf.js"
   },
-  "dependencies": {
-    "jasmine-node": "^1.14.5",
-    "saucelabs": "^1.0.1",
-    "grunt": "0.4.5",
-    "grunt-parallel": "^0.4.1",
-    "grunt-shell": "^1.1.2",
-    "grunt-cli": "^0.1.13",
-    "webdriverio": "*"
+  "devDependencies": {
+    "webdriverio": "4.13.1",
+    "jasmine-node": "2.0.1",
+    "wdio-dot-reporter": "0.0.10",
+    "wdio-jasmine-framework": "^0.3.5",
+    "wdio-sauce-service": "^0.1.0"
   }
 }
